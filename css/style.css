@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" ,sans-serif;
+}
+header{
+    background-image: url(../img/1.jpg);
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 100%;
+    position: relative;
+}
+header nav{
+    background-color: #F5F8FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav img{
+    width: 120px;
+    margin: 10px 50px;
+}
+header nav ul{
+    padding: 1.4%;
+    margin-right: 5%;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+header nav ul li a{
+   text-decoration: none;
+   color: #000;
+   padding: 5px 0;
+   position: relative;
+}
+header nav ul li a:hover{
+   background-color: #1392D3;
+   transition: 0.2s;
+   border-radius: 5px;
+}
+@media screen and (min-width: 767px){
+    .menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    header nav ul li{
+        display: none;
+    }
+    .menu{
+    width: 50px;
+    height: 50px;
+    margin: 2%;
+    cursor: pointer;
+    }
+}
+.log-in{
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 4px 6px;
+}
+.log-in:hover{
+    border-color: #1392D3;
+}
+.jobs{
+    color: #F5F8FA;
+    background-color: #1392D3;
+    padding: 4px 6px;
+    border-radius: 5px;
+}
+.content{
+    height: 87%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6; 
+}
+.inner-div{
+    position:absolute ;
+    top: 18%;
+    left: 11%;
+    background-color: #000;
+    opacity: 0.9;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left-col{
+    color: #F5F8FA;
+    padding: 6% 8%;
+    margin-right: 50%;
+    border-right: 2px solid;
+}
+.left-col h1{
+    text-align: right;
+}
+.left-col h2{
+    text-align: right;
+    margin-top: 2%;
+}
+.right-col{
+    color: #F5F8FA;
+    position: absolute;
+    left: 55%;
+    top: 14%;
+}
+.right-col ul{
+    list-style: none;
+}
+.right-col ul li{
+    padding: 1%;
+    font-size: 17px;
+}
+.right-col button{
+    padding: 6px 12px;
+    background-color: #027dff;
+    border-color: #027dff;
+    border-radius: 5px;
+    color: #F5F8FA;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.right-col button:hover{
+    background-color: #0aa0eb;
+    border-color: #000;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 767px){
+    .left-col h1{
+        font-size: 20px;
+        padding: 5%;
+    }
+    .left-col h2{
+        font-size: 20px;
+    }
+    .right-col h1{
+        font-size: 20px;
+    }
+    .right-col button{
+        font-size: 15px;
+        padding: 1%;
+        margin: 0px;
+    }
+    .right-col{
+        position: absolute;
+        top: 9%;
+    }
+}
+@media screen and (max-width: 410px){
+    .left-col h1{
+        font-size: 18px;
+    }
+    .right-col h1{
+        font-size: 18px;
+    }
+    .right-col ul li{
+        padding: 0px;
+    }
+}
+.main-div{
+    position: relative;
+}
+.apply-job{
+    position: relative;
+    top: 20px;
+    border-right: 2px solid #027dff;
+    margin-right: 49%;
+}
+.guard{
+    display: inline-block;
+    margin: 4% 6%;
+}
+.guard img{
+    height: 80px;
+    width: 80px;
+    display: inline;
+}
+.guard h3{
+    float: right;
+    margin-top: 20px;
+}
+.cv-div{
+   margin: 12% 10%;
+}
+.cv-div img{
+    height: 170px;
+    width: 30%;
+    display: inline;
+    float: left;
+}
+.cv-div h3{
+   padding: 20px;
+}
+.cv-div button{
+    padding: 6px 15px;
+    background-color: #027dff;
+    border-color: #027dff;
+    border-radius: 5px;
+    color: #F5F8FA;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.cv-div button:hover{
+    background-color: #0aa0eb;
+    border-color: #000;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 767px){
+    .apply-job{
+        position: relative;
+        top: 50px;
+    }
+    .cv-div img{
+        height: 200px;
+        width: 90%;
+    }
+    .cv-div h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .cv-div button{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 465px){
+    .cv-div img{
+        height: 120px;
+    }
+    .cv-div h3{
+        font-size: 17px;
+    }
+    .cv-div button{
+        margin: 0px;
+    }
+}
+
+.find-job{
+    position: absolute;
+    right: 7%;
+    top: 20px;
+}
+.find-job h2{
+    color: #000;
+    padding: 2px 1%;
+    margin: 2% 4%;
+}
+.find-job form{
+    padding: 2px 0px;
+}
+
+
+.find-job form input{
+    padding: 3%;
+    margin: 2%;
+    border-radius: 40px;
+    border-color: #027dff;
+}
+.find-job button{
+    padding: 10px 15px;
+    background-color: #027dff;
+    border-color: #027dff;
+    border-radius: 20px;
+    color: #F5F8FA;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+.find-job button:hover{
+    background-color: #0aa0eb;
+    border-color: #000;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 400px){
+    .find-job{
+        position: absolute;
+        right: 1%;
+    }
+    .find-job h2{
+        margin-left: 50%;
+    }
+    .find-job .form{
+        padding: 1px 1px;
+    }
+    .find-job form input{
+        display: none;
+    }
+    .find-job button{
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 50%;
+    }
+    .find-job h4{
+        margin-left: 50%;
+    }
+}
+@media screen and (max-width: 1100px){
+    .find-job{
+        position: absolute;
+        left: 20%;
+    }
+    .find-job form input{
+        display: none;
+    }
+    .find-job h2{
+        margin-left: 60%;
+    }
+    .find-job button{
+        margin-left: 60%;
+    }
+    .find-job h4{
+        margin-left: 60%;
+    }
+}
+
+.companies{
+    position: absolute;
+    top: 400px;
+    right: 50px;
+    height: 130px;
+    width: 40%;
+    background-color: #FFFFFF;
+    box-shadow:  0px 2px 5px 1px rgba(138, 135, 135, 0.75);
+    cursor: pointer;
+}
+.companies img{
+    float: left;
+   border: 1px solid black;
+   height: 80px;
+   width: 80px;
+   margin: 25px 20px;
+}
+.companies h2{
+    padding: 10px;
+}
+.companies button{
+    float: right;
+    background-color: #28A745;
+    border-radius: 5px;
+    border-color: #28A745;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.finance{
+    position: absolute;
+    top: 600px;
+    right: 50px;
+    height: 130px;
+    width: 40%;
+    background-color: #FFFFFF;
+    box-shadow:  0px 2px 5px 1px rgba(138, 135, 135, 0.75);
+    cursor: pointer;
+}
+.finance img{
+    float: left;
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 25px 20px;
+}
+.finance h2{
+    padding: 10px;
+}
+.finance button{
+    float: right;
+    background-color: #28A745;
+    border-radius: 5px;
+    border-color: #28A745;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.instructional{
+    position: absolute;
+    top: 800px;
+    right: 50px;
+    height: 130px;
+    width: 40%;
+    background-color: #FFFFFF;
+    box-shadow:  0px 2px 5px 1px rgba(138, 135, 135, 0.75);
+    cursor: pointer;
+}
+.instructional img{
+    float: left;
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    margin: 25px 20px;
+}
+.instructional h2{
+    padding: 10px;
+}
+.instructional button{
+    float: right;
+    background-color: #28A745;
+    border-radius: 5px;
+    border-color: #28A745;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px){
+    .companies{
+        position: absolute;
+        right: 1%;
+        top: 35%;
+    }
+    .companies img{
+        height: 40px;
+        width: 40px;
+        margin: 2px;
+    }
+    .companies h2{
+        font-size: 20px;
+    }
+    .finance{
+        position: absolute;
+        top: 55%;
+        right: 1%;
+    }
+    .finance img{
+        height: 40px;
+        width: 40px;
+        margin: 2px;
+    }
+    .finance h2{
+        font-size: 20px;
+    }
+    .instructional{
+        position: absolute;
+        top: 75%;
+        right: 1%;
+    }
+    .instructional img{
+        height: 40px;
+        width: 40px;
+        margin: 2px;
+    }
+    .instructional h2{
+        font-size: 20px;
+    }
+}
+
+.about{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.for-companies{
+    position: relative;
+    width: 450px;
+    height: 260px;
+    background: #fff;
+   margin: 40px 30px;
+    padding: 0px 0px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow:  0px 1px 2px 1px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.for-companies h3{
+    padding-top: 50px;
+}
+.for-companies h4{
+    padding: 20px 20px;
+    line-height: 35px;
+}
+.for-companies button{
+    padding: 10px 15px;
+    background-color: #027dff;
+    border-color: #027dff;
+    border-radius: 5px;
+    color: #F5F8FA;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 10px 4px;
+    cursor: pointer;
+}
+.for-companies button:hover{
+    background-color: #0aa0eb;
+    border-color: #000;
+    transition: 0.3s;
+}
+.for-companies:hover{
+    box-shadow:  1px 1px 5px 2px rgba(0,0,0,0.75);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #F8F9FA;
+}
+.contact{
+    margin: 50px ;
+}
+
+.video-box{
+    margin: 40px;
+}
+
+
+.footer{
+    background-color: #434343;
+    padding: 70px 0;
+}
+.footer-box{
+    max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-col ul{
+	list-style: none;
+    text-decoration: none;
+}
+.footer-col ul li{
+    color: white;
+}
+.footer-col{
+    width: 25%;
+   padding: 0 15px;
+}
+.footer-col ul h2{
+    color: white;
+    margin: 20px;
+}
+.footer-col ul p{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.footer-col ul a{
+    color: white;
+    border: 1px solid;
+   border-radius: 20px;
+   padding: 10px;
+   margin: 20px;
+}
+.footer-col ul a:hover{
+    background-color: white;
+    color: #027dff;
+    transition: 0.3s;
+}
+.footer-col h2{
+    color: white;
+}
+.footer-col p{
+    color: white;
+}
+
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
